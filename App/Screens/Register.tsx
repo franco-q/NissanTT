@@ -4,6 +4,11 @@ import { Input, Text, Div, Button } from 'react-native-magnus'
 import { TouchableOpacity } from 'react-native'
 import { useHeaderHeight } from '@react-navigation/stack'
 
+const NissanBrandRegular = 'Nissan Brand Regular'
+const NissanBrandBold = 'Nissan Brand Bold'
+const NissanBrandItalic = 'Nissan Brand Italic'
+const NissanBrandLight = 'Nissan Brand Light'
+
 interface Props {
 	navigation: any
 }
@@ -11,7 +16,7 @@ const Register: FC<Props> = ({ navigation }) => {
 	const headerHeight = useHeaderHeight()
 	useEffect(() => {
 		navigation.setOptions({
-			headerRight: props => (
+			headerRight: () => (
 				<TouchableOpacity onPress={() => navigation.navigate('Signin')}>
 					<Text p={'md'} mr={'md'}>
 						Volver atrás
@@ -21,10 +26,18 @@ const Register: FC<Props> = ({ navigation }) => {
 		})
 	}, [])
 	return (
-		<Div p={'md'} pt={headerHeight}>
+		<Div
+			p={'md'}
+			pt={headerHeight}
+			bgImg={require('../Assets/bg-pattern.jpg')}
+			flex={1}>
 			<Div mb={'xl'}>
-				<Text fontSize={'6xl'}>Creá tu cuenta</Text>
-				<Text fontSize={'xl'}>Completa los siguientes campos:</Text>
+				<Text fontSize={'6xl'} fontFamily={NissanBrandRegular}>
+					Creá tu cuenta
+				</Text>
+				<Text fontSize={'xl'} fontFamily={NissanBrandRegular}>
+					Completa los siguientes campos:
+				</Text>
 			</Div>
 			<Div mb={'lg'}>
 				<Text fontSize={'xl'}>Dirección de correo electrónico:</Text>

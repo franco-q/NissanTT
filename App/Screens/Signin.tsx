@@ -23,12 +23,18 @@ const Signin: FC<Props> = ({ navigation }) => {
 	}, [])
 
 	return (
-		<Div p={'md'} pt={headerHeight}>
+		<Div
+			p={'md'}
+			pt={headerHeight}
+			bgImg={require('../Assets/bg-pattern.jpg')}
+			flex={1}>
 			<Text fontSize={'6xl'}>Inicio de Sesión</Text>
 			<Div mb={'xl'} row>
 				<Text fontSize={'xl'}>¿Eres un nuevo usuario? </Text>
 				<TouchableOpacity onPress={() => navigation.navigate('Register')}>
-					<Text fontSize={'xl'} color={'redNissan'}>Crear una cuenta</Text>
+					<Text fontSize={'xl'} color={'redNissan'}>
+						Crear una cuenta
+					</Text>
 				</TouchableOpacity>
 			</Div>
 			<Div mb={'lg'}>

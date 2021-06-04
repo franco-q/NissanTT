@@ -18,6 +18,26 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* NissanTTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* NissanTTTests.m */; };
 		7CD10C45F8AA3F63A73905DD /* libPods-NissanTT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B548F5FDFDA8D319FADDCE4E /* libPods-NissanTT.a */; };
+		8DBE66496D624ADE912056EB /* Nissan Brand Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C49E84D1A9FD4B91A2C33A55 /* Nissan Brand Bold.otf */; };
+		B3548FC0F9C3405F99D0902D /* Nissan Brand Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3241AEFE48A14D01BC05EC2E /* Nissan Brand Italic.otf */; };
+		FD0CC93637864288945C28AF /* Nissan Brand Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6EA9DD3729154F57AF63ABCC /* Nissan Brand Light.otf */; };
+		726418D65A40402FB5523B78 /* Nissan Brand Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 23936F5A86CC4A62814A0E1D /* Nissan Brand Regular.otf */; };
+		DCAB01A94C2A49B3B9B270C5 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF138F4259244C178D53FED0 /* AntDesign.ttf */; };
+		278F563593EF47A5B9253FA1 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0E6A43CFE63439F8DB7B23D /* Entypo.ttf */; };
+		1A8DE7C2DDC14490B58B6689 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B900F4309F774E8FB8062B5F /* EvilIcons.ttf */; };
+		40CFDA45F6A34DDB9CD15EEB /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88B6C26B4EDA40619A575F7C /* Feather.ttf */; };
+		33EB21F8B7494D8DAE537978 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A280DC8B6F754861B23E068E /* FontAwesome.ttf */; };
+		9CCE03C1829B44AD95E1142F /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6B723C4E036416FA3E1C4B1 /* FontAwesome5_Brands.ttf */; };
+		72369BFCA7324D21A6C895C1 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE9331E31AE84631A222FBF9 /* FontAwesome5_Regular.ttf */; };
+		EC5EB4B963F842ABB819B9A1 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0333FD8D811B4139A40CEBB6 /* FontAwesome5_Solid.ttf */; };
+		29BC309020874B47A8C61D55 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D6AAEA3F5DF4E13A9F0540B /* Fontisto.ttf */; };
+		BB6E733E361D491DA3886796 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 304491B86CB74302B0D3A134 /* Foundation.ttf */; };
+		D4CB40690D1A4679ACEF5E05 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC6DF2685C2946BBBCE40D1F /* Ionicons.ttf */; };
+		6BE1E9A6D8904A81AA31A908 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A36635449641444C9BE196E2 /* MaterialCommunityIcons.ttf */; };
+		5825052148D64777A456E6CD /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E62BA9FB0C06440E9A791124 /* MaterialIcons.ttf */; };
+		1E8F2A0D5C3049AC95C2B68D /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 722D5D30860F4FECAB80B220 /* Octicons.ttf */; };
+		69F92F15F7D041E4AFCC5267 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8C6B14189864C69A852AFB1 /* SimpleLineIcons.ttf */; };
+		0D2CCFD267AC41309EA9A050 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFCCFC014938476F9FFAEA07 /* Zocial.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +79,26 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F2CC10EAEA66CAF6EC3E7E48 /* libPods-NissanTT-NissanTTTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NissanTT-NissanTTTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C49E84D1A9FD4B91A2C33A55 /* Nissan Brand Bold.otf */ = {isa = PBXFileReference; name = "Nissan Brand Bold.otf"; path = "../res/fonts/Nissan Brand Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3241AEFE48A14D01BC05EC2E /* Nissan Brand Italic.otf */ = {isa = PBXFileReference; name = "Nissan Brand Italic.otf"; path = "../res/fonts/Nissan Brand Italic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6EA9DD3729154F57AF63ABCC /* Nissan Brand Light.otf */ = {isa = PBXFileReference; name = "Nissan Brand Light.otf"; path = "../res/fonts/Nissan Brand Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		23936F5A86CC4A62814A0E1D /* Nissan Brand Regular.otf */ = {isa = PBXFileReference; name = "Nissan Brand Regular.otf"; path = "../res/fonts/Nissan Brand Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EF138F4259244C178D53FED0 /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B0E6A43CFE63439F8DB7B23D /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B900F4309F774E8FB8062B5F /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		88B6C26B4EDA40619A575F7C /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A280DC8B6F754861B23E068E /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B6B723C4E036416FA3E1C4B1 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BE9331E31AE84631A222FBF9 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0333FD8D811B4139A40CEBB6 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4D6AAEA3F5DF4E13A9F0540B /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		304491B86CB74302B0D3A134 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DC6DF2685C2946BBBCE40D1F /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A36635449641444C9BE196E2 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E62BA9FB0C06440E9A791124 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		722D5D30860F4FECAB80B220 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B8C6B14189864C69A852AFB1 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FFCCFC014938476F9FFAEA07 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +193,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				8D901AD43494B87A6C88B314 /* Pods */,
+				37A62FCD7F2C4BD19E1C2CB0 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -181,6 +222,34 @@
 			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		37A62FCD7F2C4BD19E1C2CB0 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				C49E84D1A9FD4B91A2C33A55 /* Nissan Brand Bold.otf */,
+				3241AEFE48A14D01BC05EC2E /* Nissan Brand Italic.otf */,
+				6EA9DD3729154F57AF63ABCC /* Nissan Brand Light.otf */,
+				23936F5A86CC4A62814A0E1D /* Nissan Brand Regular.otf */,
+				EF138F4259244C178D53FED0 /* AntDesign.ttf */,
+				B0E6A43CFE63439F8DB7B23D /* Entypo.ttf */,
+				B900F4309F774E8FB8062B5F /* EvilIcons.ttf */,
+				88B6C26B4EDA40619A575F7C /* Feather.ttf */,
+				A280DC8B6F754861B23E068E /* FontAwesome.ttf */,
+				B6B723C4E036416FA3E1C4B1 /* FontAwesome5_Brands.ttf */,
+				BE9331E31AE84631A222FBF9 /* FontAwesome5_Regular.ttf */,
+				0333FD8D811B4139A40CEBB6 /* FontAwesome5_Solid.ttf */,
+				4D6AAEA3F5DF4E13A9F0540B /* Fontisto.ttf */,
+				304491B86CB74302B0D3A134 /* Foundation.ttf */,
+				DC6DF2685C2946BBBCE40D1F /* Ionicons.ttf */,
+				A36635449641444C9BE196E2 /* MaterialCommunityIcons.ttf */,
+				E62BA9FB0C06440E9A791124 /* MaterialIcons.ttf */,
+				722D5D30860F4FECAB80B220 /* Octicons.ttf */,
+				B8C6B14189864C69A852AFB1 /* SimpleLineIcons.ttf */,
+				FFCCFC014938476F9FFAEA07 /* Zocial.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -324,6 +393,26 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				8DBE66496D624ADE912056EB /* Nissan Brand Bold.otf in Resources */,
+				B3548FC0F9C3405F99D0902D /* Nissan Brand Italic.otf in Resources */,
+				FD0CC93637864288945C28AF /* Nissan Brand Light.otf in Resources */,
+				726418D65A40402FB5523B78 /* Nissan Brand Regular.otf in Resources */,
+				DCAB01A94C2A49B3B9B270C5 /* AntDesign.ttf in Resources */,
+				278F563593EF47A5B9253FA1 /* Entypo.ttf in Resources */,
+				1A8DE7C2DDC14490B58B6689 /* EvilIcons.ttf in Resources */,
+				40CFDA45F6A34DDB9CD15EEB /* Feather.ttf in Resources */,
+				33EB21F8B7494D8DAE537978 /* FontAwesome.ttf in Resources */,
+				9CCE03C1829B44AD95E1142F /* FontAwesome5_Brands.ttf in Resources */,
+				72369BFCA7324D21A6C895C1 /* FontAwesome5_Regular.ttf in Resources */,
+				EC5EB4B963F842ABB819B9A1 /* FontAwesome5_Solid.ttf in Resources */,
+				29BC309020874B47A8C61D55 /* Fontisto.ttf in Resources */,
+				BB6E733E361D491DA3886796 /* Foundation.ttf in Resources */,
+				D4CB40690D1A4679ACEF5E05 /* Ionicons.ttf in Resources */,
+				6BE1E9A6D8904A81AA31A908 /* MaterialCommunityIcons.ttf in Resources */,
+				5825052148D64777A456E6CD /* MaterialIcons.ttf in Resources */,
+				1E8F2A0D5C3049AC95C2B68D /* Octicons.ttf in Resources */,
+				69F92F15F7D041E4AFCC5267 /* SimpleLineIcons.ttf in Resources */,
+				0D2CCFD267AC41309EA9A050 /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
