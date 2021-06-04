@@ -18,6 +18,9 @@ export default function App() {
 					theme={{
 						colors: {
 							redNissan: '#BA002F'
+						},
+						fontSize: {
+							'7xl': 36
 						}
 					}}>
 					<RootNavigationContainer />
