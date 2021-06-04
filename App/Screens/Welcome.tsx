@@ -119,10 +119,12 @@ const Welcome: FC<Props> = ({ navigation }) => {
 				<Button
 					rounded={0}
 					m={'auto'}
-					px="xl"
-					py="sm"
+					px="2xl"
+					py="md"
 					bg="redNissan"
-					color="white">
+					fontFamily={Light}
+					color="white"
+					onPress={() => navigation.navigate('Main')}>
 					Aceptar
 				</Button>
 			</Div>
