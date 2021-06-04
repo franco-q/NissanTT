@@ -18,7 +18,7 @@ const Register: FC<Props> = ({ navigation }) => {
 	useEffect(() => {
 		navigation.setOptions({
 			headerRight: () => (
-				<TouchableOpacity onPress={() => navigation.navigate('Signin')}>
+				<TouchableOpacity onPress={() => navigation.goBack()}>
 					<Text p={'md'} mr={'md'} fontFamily={Light} fontSize={'xl'}>
 						Volver atrás
 					</Text>
