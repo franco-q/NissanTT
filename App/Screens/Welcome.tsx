@@ -1,51 +1,129 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import type { FC } from 'react'
-import { Div, Text } from 'react-native-magnus'
+import { Button, Div, Text, Image } from 'react-native-magnus'
 import { useHeaderHeight } from '@react-navigation/stack'
+import { Dimensions, TouchableOpacity, View, StyleSheet } from 'react-native'
+
+import Carousel from 'react-native-snap-carousel'
+
+const Regular = 'Nissan Brand Regular'
+const Bold = 'Nissan Brand Bold'
+const Italic = 'Nissan Brand Italic'
+const Light = 'Nissan Brand Light'
 
 interface Props {
 	navigation: any
 }
 
-const Welcome: FC<Props> = () => {
-	const headerHeight = useHeaderHeight()
+const ENTRIES1 = [
+	{
+		illustration: require('../Assets/cars-1.png')
+	},
+	{
+		illustration: require('../Assets/cars-1.png')
+	},
+	{
+		illustration: require('../Assets/NISSAN-APPS-MAYO.jpg')
+	},
+	{
+		illustration: require('../Assets/cars-1.png')
+	},
+	{
+		illustration: require('../Assets/cars-1.png')
+	}
+]
+
+const { width } = Dimensions.get('window')
+const screenWidth = width - 30
+
+const WelcomeCarousel = () => {
+	const [entries, setEntries] = useState([])
+
+	const carouselRef = useRef<Carousel<any>>(null)
+
+	const goForward = () => {
+		carouselRef.current.snapToNext()
+	}
+	const goBack = () => {
+		carouselRef.current.snapToPrev()
+	}
+
+	useEffect(() => {
+		setEntries(ENTRIES1)
+	}, [])
+
+	const renderItem = ({ item }: { item: any; index: number }) => {
+		return (
+			<Div w={screenWidth - 100} h={screenWidth - 100}>
+				<Image source={item.illustration} style={styles.image} />
+			</Div>
+		)
+	}
+
 	return (
-		<Div
-			p={'md'}
-			pt={headerHeight}
-			bgImg={require('../Assets/bg-pattern.jpg')}
-			flex={1}>
-			<Div mb={'xl'}>
-				<Text fontSize={'6xl'}>Creá tu cuenta</Text>
-				<Text fontSize={'xl'} fontFamily={}>
-					Completa los siguientes campos:
+		<View>
+			<TouchableOpacity onPress={goForward}>
+				<Text>goForward</Text>
+			</TouchableOpacity>
+			<TouchableOpacity onPress={goBack}>
+				<Text>goBack</Text>
+			</TouchableOpacity>
+			<Carousel
+				ref={carouselRef}
+				sliderWidth={screenWidth}
+				sliderHeight={screenWidth}
+				itemWidth={screenWidth - 100}
+				data={entries}
+				renderItem={renderItem}
+			/>
+		</View>
+	)
+}
+
+const styles = StyleSheet.create({
+	image: {
+		...StyleSheet.absoluteFillObject,
+		resizeMode: 'center'
+	}
+})
+
+const Welcome: FC<Props> = ({ navigation }) => {
+	const { width: screenWidth } = Dimensions.get('window')
+	const carousel = useRef(null)
+	const headerHeight = useHeaderHeight()
+
+	useEffect(() => {
+		navigation.setOptions({
+			headerRight: () => (
+				<TouchableOpacity onPress={() => navigation.navigate('Signin')}>
+					<Text p={'md'} mr={'md'} fontFamily={Light} fontSize={'xl'}>
+						Volver atrás
+					</Text>
+				</TouchableOpacity>
+			)
+		})
+	}, [])
+
+	return (
+		<Div pt={headerHeight} bgImg={require('../Assets/bg-pattern.jpg')} flex={1}>
+			<Div mb={'xl'} alignItems={'center'}>
+				<Text fontSize={'7xl'} fontFamily={Regular}>
+					Bienvenidos
+				</Text>
+				<Text fontSize={'lg'} fontFamily={Regular} textAlign={'center'} w={250}>
+					Antes de Comenzar, seleccioná el modelo de tu Nissan.
 				</Text>
 			</Div>
-			<Div mb={'lg'}>
-				<Text fontSize={'xl'}>Dirección de correo electrónico:</Text>
-				<Input
-					h={32}
-					pt={0}
-					pb={0}
-					rounded={0}
-					bg={'transparent'}
-					borderBottomColor={'#3D3D3D'}
-					borderBottomWidth={0.5}
-					borderTopWidth={0}
-					borderRightWidth={0}
-					borderLeftWidth={0}
-				/>
-			</Div>
-
-			<Div row>
+			<WelcomeCarousel />
+			<Div row justifyContent={'center'}>
 				<Button
 					rounded={0}
-					ml={'auto'}
+					m={'auto'}
 					px="xl"
 					py="sm"
 					bg="redNissan"
 					color="white">
-					Registrarse
+					Aceptar
 				</Button>
 			</Div>
 		</Div>

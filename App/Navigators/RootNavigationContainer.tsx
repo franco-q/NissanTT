@@ -2,11 +2,9 @@ import 'react-native-gesture-handler'
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
-import { Text } from 'react-native-magnus'
-import AuthStack from './AuthStack'
+// import AuthStack from './AuthStack'
 
-import { Register, Intro, Signin } from '../Screens'
-import { TouchableOpacity } from 'react-native'
+import { Register, Intro, Signin, Welcome } from '../Screens'
 
 const RootStack = createStackNavigator()
 
@@ -41,6 +39,15 @@ function RootNavigationContainer(): JSX.Element {
 					}}
 					name="Signin"
 					component={Signin}
+				/>
+				<RootStack.Screen
+					options={{
+						title: '',
+						headerLeft: null,
+						headerTransparent: true
+					}}
+					name="Welcome"
+					component={Welcome}
 				/>
 			</RootStack.Navigator>
 		</NavigationContainer>
