@@ -4,6 +4,11 @@ import { Input, Text, Div, Button } from 'react-native-magnus'
 import { TouchableOpacity } from 'react-native'
 import { useHeaderHeight } from '@react-navigation/stack'
 
+const Regular = 'Nissan Brand Regular'
+const Bold = 'Nissan Brand Bold'
+const Italic = 'Nissan Brand Italic'
+const Light = 'Nissan Brand Light'
+
 interface Props {
 	navigation: any
 }
@@ -12,9 +17,9 @@ const Signin: FC<Props> = ({ navigation }) => {
 	const headerHeight = useHeaderHeight()
 	useEffect(() => {
 		navigation.setOptions({
-			headerRight: props => (
+			headerRight: () => (
 				<TouchableOpacity onPress={() => navigation.navigate('Intro')}>
-					<Text p={'md'} mr={'md'}>
+					<Text p={'md'} mr={'md'} fontFamily={Light} fontSize={'xl'}>
 						Volver atrás
 					</Text>
 				</TouchableOpacity>
@@ -28,17 +33,26 @@ const Signin: FC<Props> = ({ navigation }) => {
 			pt={headerHeight}
 			bgImg={require('../Assets/bg-pattern.jpg')}
 			flex={1}>
-			<Text fontSize={'6xl'}>Inicio de Sesión</Text>
-			<Div mb={'xl'} row>
-				<Text fontSize={'xl'}>¿Eres un nuevo usuario? </Text>
-				<TouchableOpacity onPress={() => navigation.navigate('Register')}>
-					<Text fontSize={'xl'} color={'redNissan'}>
-						Crear una cuenta
+			<Div mb={'2xl'}>
+				<Text fontSize={'7xl'} fontFamily={Regular}>
+					Inicio de Sesión
+				</Text>
+				<Div row>
+					<Text fontSize={'lg'} fontFamily={Light} mr={'sm'}>
+						¿Eres un nuevo usuario?
 					</Text>
-				</TouchableOpacity>
+					<TouchableOpacity onPress={() => navigation.navigate('Register')}>
+						<Text fontSize={'lg'} fontFamily={Light} color={'redNissan'}>
+							Crear una cuenta
+						</Text>
+					</TouchableOpacity>
+				</Div>
 			</Div>
+
 			<Div mb={'lg'}>
-				<Text fontSize={'xl'}>Dirección de correo electrónico:</Text>
+				<Text fontSize={'lg'} fontFamily={Regular}>
+					Dirección de correo electrónico:
+				</Text>
 				<Input
 					h={32}
 					pt={0}
@@ -54,7 +68,9 @@ const Signin: FC<Props> = ({ navigation }) => {
 			</Div>
 
 			<Div mb={'lg'}>
-				<Text fontSize={'xl'}>Contraseña:</Text>
+				<Text fontSize={'lg'} fontFamily={Regular}>
+					Contraseña:
+				</Text>
 				<Input
 					h={32}
 					pt={0}
@@ -70,7 +86,9 @@ const Signin: FC<Props> = ({ navigation }) => {
 			</Div>
 
 			<Div mb={'lg'}>
-				<Text fontSize={'xl'}>¿Olvidaste tu contraseña? </Text>
+				<Text fontSize={'lg'} fontFamily={Regular}>
+					¿Olvidaste tu contraseña?{' '}
+				</Text>
 			</Div>
 
 			<Div row>
@@ -80,7 +98,8 @@ const Signin: FC<Props> = ({ navigation }) => {
 					px="xl"
 					py="sm"
 					bg="redNissan"
-					color="white">
+					color="white"
+					onPress={() => navigation.navigate('Welcome')}>
 					Ingresar
 				</Button>
 			</Div>
