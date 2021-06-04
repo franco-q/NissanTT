@@ -4,7 +4,9 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 // import AuthStack from './AuthStack'
 
-import { Register, Intro, Signin, Welcome } from '../Screens'
+import { Register, Intro, Signin, Welcome, Main } from '../Screens'
+import Menu from '../Components/Menu'
+import HeaderLogo from '../Components/HeaderLogo'
 
 const RootStack = createStackNavigator()
 
@@ -48,6 +50,18 @@ function RootNavigationContainer(): JSX.Element {
 					}}
 					name="Welcome"
 					component={Welcome}
+				/>
+				<RootStack.Screen
+					options={{
+						title: '',
+						headerStyle: {
+							backgroundColor: '#3D3D3D'
+						},
+						headerLeft: () => <HeaderLogo />,
+						headerRight: () => <Menu />
+					}}
+					name="Main"
+					component={Main}
 				/>
 			</RootStack.Navigator>
 		</NavigationContainer>

@@ -17,6 +17,7 @@ export default function App() {
 				<ThemeProvider
 					theme={{
 						colors: {
+							blackNissan: '#333333',
 							redNissan: '#BA002F'
 						},
 						fontSize: {
