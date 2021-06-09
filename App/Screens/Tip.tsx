@@ -1,6 +1,8 @@
-import React, { FC } from 'react'
-import { FlatList, TouchableOpacity } from 'react-native'
-import { Text, Div } from 'react-native-magnus'
+import React from 'react'
+import { TouchableOpacity } from 'react-native'
+import { Div, Text } from 'react-native-magnus'
+import LottieView from 'lottie-react-native'
+import Menu from '../Components/Menu'
 import {
 	LeftIcon1,
 	LeftIcon2,
@@ -19,16 +21,11 @@ import {
 	RightIcon7,
 	RightIcon8
 } from '../Assets/SVG'
-import Menu from '../Components/Menu'
 
 const Regular = 'Nissan Brand Regular'
 const Bold = 'Nissan Brand Bold'
 const Italic = 'Nissan Brand Italic'
 const Light = 'Nissan Brand Light'
-
-interface Props {
-	navigation: any
-}
 
 const tips = [
 	{
@@ -81,49 +78,43 @@ const tips = [
 		title: 'Diferente Posiciones de Luces'
 	}
 ]
-
-const Main: FC<Props> = ({ navigation }) => {
+const Tip = ({ navigation, route }) => {
+	const item = tips.find(t => t.key == route.params.key)
 	return (
-		<Div px={'lg'} flex={1} bg={'blackNissan'}>
-			<Div row py={'lg'}>
-				<Text color={'white'} fontSize={'5xl'} mr={'sm'} fontFamily={Bold}>
-					TIPS
-				</Text>
-				<Text color={'white'} fontSize={'5xl'} fontFamily={Regular}>
-					NISSAN Kicks
+		<Div flex={1} bg={'blackNissan'}>
+			<Div pt={'xl'}>
+				<Div
+					row
+					justifyContent={'space-between'}
+					alignItems={'center'}
+					mb={'md'}
+					bg={'redNissan'}>
+					<Div w={60} h={60}>
+						<item.LeftIcon />
+					</Div>
+					<Div p={'md'} flex={1}>
+						<Text fontSize={'lg'} color={'white'} fontFamily={Regular}>
+							{item.title}
+						</Text>
+					</Div>
+					<Div w={60} h={60}>
+						{/* <item.RightIcon /> */}
+					</Div>
+				</Div>
+			</Div>
+
+			<Div p={'2xl'}>
+				<Text color={'white'} fontFamily={Regular} textAlign={'center'}>
+					Para activar el Modo Sport en tu Nissan Kicks, tenés que apretar el
+					botón trasero en la palanca de tu caja CVT. Este modo te dará una
+					respuesta más rápida de aceleración, útil para sobrepasar otros autos
+					en ruta.
 				</Text>
 			</Div>
-			<FlatList
-				data={tips}
-				keyExtractor={e => `friend-list-item-${e.key}`}
-				renderItem={({ item }) => (
-					<Div>
-						<Div
-							row
-							justifyContent={'space-between'}
-							alignItems={'center'}
-							mb={'md'}>
-							<Div w={60} h={60}>
-								<item.LeftIcon />
-							</Div>
-							<Div p={'md'} flex={1}>
-								<TouchableOpacity
-									onPress={() => navigation.navigate('Tip', { key: item.key })}>
-									<Text fontSize={'lg'} color={'white'} fontFamily={Regular}>
-										{item.title}
-									</Text>
-								</TouchableOpacity>
-							</Div>
-							<Div w={60} h={60}>
-								<item.RightIcon />
-							</Div>
-						</Div>
-					</Div>
-				)}
-			/>
+			<LottieView source={require('./Palanca.json')} autoPlay loop />
 			<Menu navigation={navigation} />
 		</Div>
 	)
 }
 
-export default Main
+export default Tip

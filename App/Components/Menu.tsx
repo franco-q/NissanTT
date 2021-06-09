@@ -15,16 +15,14 @@ const Bold = 'Nissan Brand Bold'
 const Italic = 'Nissan Brand Italic'
 const Light = 'Nissan Brand Light'
 
-const MenuItem: FC<{ children: string; Icon: FC } & DivProps> = ({
-	children,
-	Icon,
-	...rest
-}) => {
+const MenuItem: FC<
+	{ children: string; Icon: FC; onPress: () => void } & DivProps
+> = ({ children, Icon, onPress, ...rest }) => {
 	const { theme } = useTheme()
 	return (
 		<Div {...rest}>
 			<TouchableHighlight
-				onPress={() => {}}
+				onPress={onPress}
 				underlayColor={theme.colors.redNissan}>
 				<Div p={'xl'}>
 					<Div h={50}>
@@ -79,6 +77,7 @@ const MenuIconToggle = ({ onPress }) => {
 
 const Menu = props => {
 	const [open, setOpen] = useState(false)
+
 	useEffect(() => {
 		props.navigation.setOptions({
 			headerRight: () => <MenuIconToggle onPress={v => setOpen(v)} />
@@ -129,9 +128,20 @@ const Menu = props => {
 					flex={1}
 					borderRightColor={'redNissan'}
 					borderRightWidth={3}>
-					<MenuItem Icon={TipsIcon}>NISSAN TIPS</MenuItem>
-					<MenuItem Icon={PoliticsIcon}>POLITICAS DE PRIVACIDAD</MenuItem>
-					<MenuItem Icon={PerfilIcon} mt={'auto'}>
+					<MenuItem
+						onPress={() => props.navigation.navigate('Main')}
+						Icon={TipsIcon}>
+						NISSAN TIPS
+					</MenuItem>
+					<MenuItem
+						onPress={() => props.navigation.navigate('Main')}
+						Icon={PoliticsIcon}>
+						POLITICAS DE PRIVACIDAD
+					</MenuItem>
+					<MenuItem
+						onPress={() => props.navigation.navigate('Main')}
+						Icon={PerfilIcon}
+						mt={'auto'}>
 						MI PERFIL
 					</MenuItem>
 				</Div>
