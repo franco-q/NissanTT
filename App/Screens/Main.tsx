@@ -1,24 +1,25 @@
-import React, { FC, useRef } from 'react'
+import React, { FC } from 'react'
 import { FlatList, TouchableOpacity } from 'react-native'
 import { Text, Div } from 'react-native-magnus'
-
-import Logo from '../Assets/SVG/Logo Nissan Negativo.svg'
-import LeftIcon1 from '../Assets/SVG/TIPS_NUMEROS/Tip_Numero-01.svg'
-import LeftIcon2 from '../Assets/SVG/TIPS_NUMEROS/Tip_Numero-02.svg'
-import LeftIcon3 from '../Assets/SVG/TIPS_NUMEROS/Tip_Numero-03.svg'
-import LeftIcon4 from '../Assets/SVG/TIPS_NUMEROS/Tip_Numero-04.svg'
-import LeftIcon5 from '../Assets/SVG/TIPS_NUMEROS/Tip_Numero-05.svg'
-import LeftIcon6 from '../Assets/SVG/TIPS_NUMEROS/Tip_Numero-06.svg'
-import LeftIcon7 from '../Assets/SVG/TIPS_NUMEROS/Tip_Numero-07.svg'
-import LeftIcon8 from '../Assets/SVG/TIPS_NUMEROS/Tip_Numero-08.svg'
-import RightIcon1 from '../Assets/SVG/TIPS_ICONO/Tip_Numero 1.svg'
-import RightIcon2 from '../Assets/SVG/TIPS_ICONO/Tip_Numero 2.svg'
-import RightIcon3 from '../Assets/SVG/TIPS_ICONO/Tip_Numero 3.svg'
-import RightIcon4 from '../Assets/SVG/TIPS_ICONO/Tip_Numero 4.svg'
-import RightIcon5 from '../Assets/SVG/TIPS_ICONO/Tip_Numero 5.svg'
-import RightIcon6 from '../Assets/SVG/TIPS_ICONO/Tip_Numero 6.svg'
-import RightIcon7 from '../Assets/SVG/TIPS_ICONO/Tip_Numero 7.svg'
-import RightIcon8 from '../Assets/SVG/TIPS_ICONO/Tip_Numero 8.svg'
+import {
+	LeftIcon1,
+	LeftIcon2,
+	LeftIcon3,
+	LeftIcon4,
+	LeftIcon5,
+	LeftIcon6,
+	LeftIcon7,
+	LeftIcon8,
+	RightIcon1,
+	RightIcon2,
+	RightIcon3,
+	RightIcon4,
+	RightIcon5,
+	RightIcon6,
+	RightIcon7,
+	RightIcon8
+} from '../Assets/SVG'
+import Menu from '../Components/Menu'
 
 const Regular = 'Nissan Brand Regular'
 const Bold = 'Nissan Brand Bold'
@@ -82,7 +83,6 @@ const tips = [
 ]
 
 const Intro: FC<Props> = ({ navigation }) => {
-	const snackbarLightRef = useRef(null)
 	return (
 		<Div px={'lg'} flex={1} bg={'blackNissan'}>
 			<Div row py={'lg'}>
@@ -93,7 +93,6 @@ const Intro: FC<Props> = ({ navigation }) => {
 					NISSAN Kicks
 				</Text>
 			</Div>
-
 			<FlatList
 				data={tips}
 				keyExtractor={e => `friend-list-item-${e.key}`}
@@ -121,6 +120,7 @@ const Intro: FC<Props> = ({ navigation }) => {
 					</Div>
 				)}
 			/>
+			<Menu navigation={navigation} />
 		</Div>
 	)
 }
